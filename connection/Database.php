@@ -45,16 +45,6 @@ class Database
         return $this->conn;
     }
 
-    private function __clone()
-    {
-    }
-
-    public function __wakeup()
-    {
-        throw new Exception("Cannot unserialize a singleton.");
-    }
-
-
 }
 
 ?>
