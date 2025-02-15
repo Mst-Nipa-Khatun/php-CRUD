@@ -28,7 +28,7 @@ function submitData() {
         return ;
     }
     $.ajax({
-        "url": "http://localhost:80/assigment_09/controller/UserController.php",
+        "url": "http://localhost:80/php-CRUD/controller/UserController.php",
         "method": "POST",
         "timeout": 0,
         "headers": {
@@ -51,7 +51,7 @@ function submitData() {
 
 function getAllUsers() {
     $.ajax({
-        "url": "http://localhost:80/assigment_09/controller/UserController.php",
+        "url": "http://localhost:80/php-CRUD/controller/UserController.php",
         "method": "GET",
         "timeout": 0,
         "headers": {
