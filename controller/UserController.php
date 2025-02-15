@@ -7,7 +7,7 @@ $method = $_SERVER['REQUEST_METHOD']; //GET,POST,PUT,DELETE,PATCH
 
 switch ($method) {
     case 'POST':
-        $requestBody = file_get_contents("php://input"); //
+        $requestBody = file_get_contents("php://input");
         /**
          * Here [true] means convert to accessible PHP array
          * Here [false] means convert to  accessible PHP object.
