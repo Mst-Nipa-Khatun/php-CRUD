@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css" rel="stylesheet">
+
+    <script src="js/submit.js"></script>
+
+    <title>Submit Form</title>
+</head>
+
+<body>
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="header text-center">Registration</h3>
+                <form id="submitForm" class="mx-auto" style="max-width: 600px; text-align: center">
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label" style="float: left"><b>First Name</b></label>
+                        <input type="text" class="form-control" id="firstname">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastname" class="form-label " style="float: left"><b>Last Name</b></label>
+                        <input type="text" class="form-control" id="lastname">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label " style="float: left"><b>Email</b></label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label " style="float: left"><b>Password</b></label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="submitData()">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="header text-center">Users</h3>
+                <table class="table table-striped usersTable">
+                    <thead>
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
+
